@@ -1,0 +1,113 @@
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(198, 198, 198);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand__list {
+  display: flex;
+  padding: 12px;
+  width: 100%;
+}
+.brand__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  height: 72px;
+  max-width: 240px;
+}
+
+.brand__img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper {
+    max-width: 100%;
+    background-color: var(--background-list-color);
+    padding-bottom: 0;
+  }
+
+  button {
+    display: flex;
+    padding: 16px;
+    background-color: var(--background-list-color);
+  }
+  .brand__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .brand__item:nth-child(n + 7) {
+    display: none;
+  }
+  .brand__list--expanded .brand__item {
+    display: grid;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper {
+    width: 100%;
+    background-color: var(--background-list-color);
+  }
+
+  button {
+    display: flex;
+    padding-left: 16px;
+    background-color: var(--background-list-color);
+  }
+  .brand__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .brand__item:nth-child(n + 7) {
+    display: flex;
+  }
+
+  .brand__item:nth-child(n + 9) {
+    display: none;
+  }
+  .brand__list--expanded .brand__item {
+    display: grid;
+  }
+}
+
+.expand-btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.expand-button__text {
+  padding: 8px;
+}

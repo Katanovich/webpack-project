@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,293 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
+    <header> </header>
+    <div class="overlay"></div>
+    <aside class="sidebar__main">
+      <header class="sidebar__header">
+        <div class="sidebar__header-left">
+          <button class="btn sidebar__btn-close" type="button">
+            <img src="./img/aside-img/close.svg" alt="close" />
+          </button>
+          <div class="sidebar__image-cps">
+            <img src="./img/aside-img/cps.svg" alt="CPS logo" />
+          </div>
+        </div>
+        <button class="btn sidebar__button-search" type="button">
+          <img src="./img/aside-img/search.svg" alt="Search btn" />
+        </button>
+      </header>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item sidebar__nav-item--active">
+            <a class="sidebar__link" href="#">Ремонт техники</a>
+          </li>
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Услуги и сервисы</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Корпоративным клиентам</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Продавцам техники</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Партнерам</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Производителям</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Наши сервисные центры</a></li
+          >
+          <li class="sidebar__nav-item"
+            ><a class="sidebar__link" href="#">Контакты</a></li
+          >
+        </ul>
+      </nav>
+      <footer>
+        <div class="sidebar__contacts">
+          <div class="sidebar__contacts-btn">
+            <button class="btn sidebar__contacts-call" type="button">
+              <img src="./img/aside-img/phone.svg" alt="call" />
+            </button>
+            <button class="btn sidebar__contacts-message" type="button">
+              <img src="./img/aside-img/text.svg" alt="text" />
+            </button>
+            <button class="btn sidebar__contacts-profile" type="button">
+              <img src="./img/aside-img/profile.svg" alt="profile" />
+            </button>
+          </div>
+          <div class="sidebar__contacts-click">
+            <a class="sidebar__contacts-mail" href="mailto:mail@cps.com">
+              mail@cps.com
+            </a>
+            <a class="sidebar__contacts-tel" href="tel:88008908900">
+              8 800 890 8900
+            </a>
+          </div>
+          <div class="sidebar__lang-container">
+            <button class="btn sidebar__lang-ru" type="button">RU</button>
+            <button class="btn sidebar__lang-en" type="button">EN</button>
+            <button class="btn sidebar__lang-ch" type="button">CH</button>
+          </div>
+        </div>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <section class="cps">
+        <header class="cps-header">
+          <div class="cps-header__left">
+            <button class="btn cps-header__burger">
+              <img src="./img/cps-img/burger.png" alt="Меню" />
+            </button>
+            <div class="cps-header__logo">
+              <img src="./img/cps-img/cps.svg" alt="CPS Логотип" />
+            </div>
+          </div>
+
+          <div class="cps-header__middle">
+            <button class="btn cps-header__tel">
+              <img
+                src="./img/cps-img/call.svg"
+                alt="call"
+                class="cps-header__tel-img"
+              />
+            </button>
+            <button class="btn cps-header__message">
+              <img
+                src="./img/cps-img/chat.svg"
+                alt="message"
+                class="cps-header__message-img"
+              />
+            </button>
+            <button class="btn cps-header__profile">
+              <img
+                src="./img/cps-img/profile.svg"
+                alt="profile"
+                class="cps-header__profile-img"
+              />
+            </button>
+          </div>
+
+          <div class="cps-header__right">
+            <button class="btn cps-header__repair">
+              <span class="cps-header__repair-text">Оставить заявку </span>
+              <img
+                src="./img/cps-img/repair.svg"
+                alt="Ремонт"
+                class="cps-header__repair-img"
+              />
+            </button>
+            <button class="btn cps-header__status">
+              <span class="cps-header__status-text">Статус ремонта</span>
+              <img
+                src="./img/cps-img/checkstatus.svg"
+                alt="Проверить статус"
+                class="cps-header__status-img"
+              />
+            </button>
+          </div>
+        </header>
+        <h1 class="cps-header__title">Услуги и сервисы</h1>
+
+        <nav class="cps-nav">
+          <ul class="cps-nav__list">
+            <li class="cps-nav__item cps-nav__item--active">
+              <a href="#">Ремонтируемые бренды</a>
+            </li>
+            <li class="cps-nav__item"
+              ><a href="#">Ремонтируемые устройства</a></li
+            >
+            <li class="cps-nav__item"><a href="#">Цены на услуги</a></li>
+            <li class="cps-nav__item"><a href="#">Специальные цены</a></li>
+            <li class="cps-nav__item"><a href="#">Контактная информация</a></li>
+          </ul>
+        </nav>
+
+        <div class="cps-content">
+          <div class="cps-content__text">
+            <p class="cps-content__paragraph cps-content__paragraph--open">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="cps-content__paragraph cps-content__paragraph--hidden">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что вы выбираете нас.
+            </p>
+            <div class="cps-content__read">
+              <a href="#" class="cps-content__read-item">
+                <img
+                  src="./img/cps-img/read.svg"
+                  class="cps-content__read-more"
+                  alt="cps-read-more"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="cps-content__background-img"></div>
+        </div>
+      </section>
+
+      <h2 class="brand__title">Ремонт техники различных брендов</h2>
+
+      <div class="swiper brand">
+        <div class="swiper-wrapper brand__list">
+          <div class="swiper-slide brand__item">
+            <img src="./img/brand_img/cat1.svg" alt="Lenovo" />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1_copy_2.svg"
+              class="brand__img"
+              alt="Apple"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy.svg"
+              class="brand__img"
+              alt="Samsung"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy10.svg"
+              class="brand__img"
+              alt="Sony"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy3.svg"
+              class="brand__img"
+              alt="ViewSonic"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy7.svg"
+              class="brand__img"
+              alt="Bosh"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="img/brand_img/cat1copy8.svg"
+              class="brand__img"
+              alt="HP"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy9.svg"
+              class="brand__img"
+              alt="Acer"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1.svg"
+              class="brand__img"
+              alt="Lenovo"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1_copy_2.svg"
+              class="brand__img"
+              alt="Apple"
+            />
+          </div>
+          <div class="swiper-slide brand__item">
+            <img
+              src="./img/brand_img/cat1copy.svg"
+              class="brand__img"
+              alt="Samsung"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <button class="brand__button" type="button" id="brandBtn">
+          <img src="../src/img/brand_img/show-icon.svg" alt="" />
+          <span class="brand__button-text">Показать все</span>
+        </button>
+      </div>
+      <h2 class="services__title">Ремонт различных видов техники</h2>
+
+      <div class="swiper repair">
+        <div class="swiper-wrapper repair__list">
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+          <div class="swiper-slide repair__item">
+            <img src="./img/swiper2.img/repair.svg" alt="repair" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
   </body>
 </html>

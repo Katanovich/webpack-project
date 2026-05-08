@@ -1,5 +1,11 @@
-$bgColor: #24292e;
-$text: #fff;
+@import 'swiper/swiper-bundle.css';
+@import 'brand__list';
+@import 'cps__section';
+@import 'aside';
+
+$bgColor: #fff;
+$text: #24292e;
+$swiperBg: rgb(235, 234, 234);
 
 @font-face {
   font-family: 'Comic';
@@ -8,10 +14,17 @@ $text: #fff;
   font-style: italic;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   padding: 1rem;
   margin: 0;
-  font-family: Comic, sans-serif;
+  font-family: sans-serif;
   background-color: $bgColor;
   color: $text;
+  width: 100%;
 }
