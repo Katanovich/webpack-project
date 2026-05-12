@@ -8,29 +8,26 @@ const swipers = {}
 
 export function initSwiper(selector, key) {
   const isMobile = window.innerWidth < 768
-
   const slider = document.querySelector(selector)
-
   if (!slider) return
-
   if (isMobile && !swipers[key]) {
     swipers[key] = new Swiper(slider, {
       modules: [Pagination],
-
       slidesPerView: 1.2,
-
-      spaceBetween: 16,
-
+      spaceBetween: 24,
       pagination: {
         el: slider.querySelector('.swiper-pagination'),
         clickable: true
       }
     })
-  }
-
-  if (!isMobile && swipers[key]) {
+  } else if (!isMobile && swipers[key]) {
     swipers[key].destroy(true, true)
-
+    const wrapper = slider.querySelector('.swiper-wrapper')
+    const slides = slider.querySelectorAll('.swiper-slide')
+    wrapper.removeAttribute('style')
+    slides.forEach((slide) => {
+      slide.removeAttribute('style')
+    })
     swipers[key] = null
   }
 }
@@ -38,26 +35,44 @@ export function initSwiper(selector, key) {
 function initAllSwipers() {
   initSwiper('.brand', 'brand')
   initSwiper('.repair', 'repair')
+  initSwiper('.price__table', 'price')
 }
 
 initAllSwipers()
-
 window.addEventListener('resize', initAllSwipers)
 
-const btn = document.querySelector('#brandBtn')
-
-const brandList = document.querySelector('.brand__list')
-
-const brandBtnText = document.querySelector('.brand__button-text')
-
-if (btn) {
+function setToggleButton(btnSelector, listSelector, textSelector, activeClass) {
+  const btn = document.querySelector(btnSelector)
+  const list = document.querySelector(listSelector)
+  const btnText = document.querySelector(textSelector)
+  if (!btn || !list || !btnText) return
   btn.addEventListener('click', () => {
-    brandList.classList.toggle('brand__list--expanded')
-
-    if (brandList.classList.contains('brand__list--expanded')) {
-      brandBtnText.textContent = 'Скрыть'
+    list.classList.toggle(activeClass)
+    if (list.classList.contains(activeClass)) {
+      btnText.textContent = 'Скрыть'
     } else {
-      brandBtnText.textContent = 'Показать все'
+      btnText.textContent = 'Показать все'
     }
   })
 }
+
+setToggleButton(
+  '#brandBtn',
+  '.brand__list',
+  '.brand__button-text',
+  'brand__list--expanded'
+)
+
+setToggleButton(
+  '#repairBtn',
+  '.repair__list',
+  '.repair__button-text',
+  'repair__list--expanded'
+)
+
+setToggleButton(
+  '#price-tableBtn',
+  '.price__list',
+  '.price-table__button-text',
+  'price__list--expanded'
+)

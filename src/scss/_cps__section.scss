@@ -1,7 +1,8 @@
 .cps-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 16px;
+  position: relative;
 }
 .cps-header__title {
   margin-top: 16px;
@@ -20,7 +21,7 @@
   background-color: aqua;
   width: 3px;
   height: 16px;
-  left: 0px;
+  left: 10px;
 }
 
 .cps-header__left {
@@ -29,34 +30,49 @@
   align-items: center;
   gap: 16px;
 }
-.cps-header__middle {
-  display: none;
+
+.cps-header__repair-text,
+.cps-header__status-text {
+  white-space: nowrap;
 }
 
 .cps-header__right {
   display: flex;
-  gap: 8px;
-  justify-content: center;
   align-items: center;
+  gap: 24px;
+  margin-left: auto;
+  display: none;
+}
+
+.cps-header__repair-btn,
+.cps-header__status-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
 }
 
 .cps-nav {
   display: flex;
-
   align-items: center;
-
+  overflow-x: auto;
   &__list {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 16px 16px;
-    list-style-type: none;
-    color: black;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+    padding: 8px;
+    gap: 16px;
   }
   &__item a {
     text-decoration: none;
-    transition: 0.3s ease;
-    color: black;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 8px 12px;
+    min-width: max-content;
   }
 
   &__item a:hover {
@@ -138,4 +154,7 @@
 }
 
 @media (min-width: 1120px) {
+  .cps-header__right {
+    display: flex;
+  }
 }

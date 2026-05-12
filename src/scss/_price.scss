@@ -1,0 +1,95 @@
+.price {
+  &__table {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    padding: 16px 16px 20px;
+  }
+
+  &__item {
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 260px;
+    height: 200px;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  &__item:nth-child(n + 4) {
+    display: none;
+  }
+
+  &__list--expanded .price__item:nth-child(n + 4) {
+    display: grid;
+  }
+
+  &__service,
+  &__cost,
+  &__time {
+    margin-bottom: 16px;
+  }
+}
+
+.price__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+.price__description {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 8px 8px;
+}
+.price__offer-icon {
+  padding-left: 8px;
+}
+@media (min-width: 768px) {
+  .price {
+    &__list.swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    &__item {
+      width: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) {
+  .price {
+    &__list.swiper-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    &__item {
+      width: 100%;
+    }
+    &__item:nth-child(n + 4) {
+      display: grid;
+    }
+    &__item:nth-child(n + 5) {
+      display: grid;
+    }
+    &__item:nth-child(n + 5) {
+      display: none;
+    }
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}

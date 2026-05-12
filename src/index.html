@@ -96,32 +96,8 @@
             </div>
           </div>
 
-          <div class="cps-header__middle">
-            <button class="btn cps-header__tel">
-              <img
-                src="./img/cps-img/call.svg"
-                alt="call"
-                class="cps-header__tel-img"
-              />
-            </button>
-            <button class="btn cps-header__message">
-              <img
-                src="./img/cps-img/chat.svg"
-                alt="message"
-                class="cps-header__message-img"
-              />
-            </button>
-            <button class="btn cps-header__profile">
-              <img
-                src="./img/cps-img/profile.svg"
-                alt="profile"
-                class="cps-header__profile-img"
-              />
-            </button>
-          </div>
-
           <div class="cps-header__right">
-            <button class="btn cps-header__repair">
+            <button class="cps-header__repair-btn">
               <span class="cps-header__repair-text">Оставить заявку </span>
               <img
                 src="./img/cps-img/repair.svg"
@@ -129,7 +105,7 @@
                 class="cps-header__repair-img"
               />
             </button>
-            <button class="btn cps-header__status">
+            <button class="cps-header__status-btn">
               <span class="cps-header__status-text">Статус ремонта</span>
               <img
                 src="./img/cps-img/checkstatus.svg"
@@ -261,7 +237,7 @@
         </div>
 
         <div class="swiper-pagination"></div>
-        <button class="brand__button" type="button" id="brandBtn">
+        <button class="brand__button toggle-btn" type="button" id="brandBtn">
           <img src="../src/img/brand_img/show-icon.svg" alt="" />
           <span class="brand__button-text">Показать все</span>
         </button>
@@ -296,7 +272,133 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
+        <button class="repair__button toggle-btn" type="button" id="repairBtn">
+          <img src="../src/img/brand_img/show-icon.svg" alt="" />
+          <span class="repair__button-text">Показать все</span>
+        </button>
       </div>
-    </main>
-  </body>
-</html>
+
+      <div class="price">
+        <h2 class="price__title">Цены на услуги</h2>
+
+        <div class="price__table swiper">
+          <div class="price__head">
+            <span class="price__head-service">Ремонтные услуги</span>
+            <span class="price__head-price">Цена</span>
+            <span class="price__head-time">Срок</span>
+          </div>
+
+          <div class="swiper-wrapper price__list">
+            <div class="swiper-slide price__item">
+              <div class="price__service">Диагностика</div>
+
+              <div class="price__cost">Бесплатно</div>
+
+              <div class="price__time">30 мин</div>
+
+              <button class="price__button" type="button">
+                <img
+                  src="./img/price-img/order.svg"
+                  alt="arrow"
+                  class="price__button-icon"
+                />
+              </button>
+            </div>
+
+            <div class="swiper-slide price__item">
+              <div class="price__service">Замена дисплея</div>
+
+              <div class="price__cost">1000 ₽</div>
+
+              <div class="price__time">30–120 мин</div>
+
+              <button class="price__button" type="button">
+                <img
+                  src="./img/price-img/order.svg"
+                  alt="arrow"
+                  class="price__button-icon"
+                />
+              </button>
+            </div>
+
+            <div class="swiper-slide price__item">
+              <div class="price__service">
+                Замена полифонического динамика
+              </div>
+
+              <div class="price__cost">1000 ₽</div>
+
+              <div class="price__time">30–120 мин</div>
+
+              <button class="price__button toggle-btn" type="button">
+                <img
+                  src="./img/price-img/order.svg"
+                  alt="arrow"
+                  class="price__button-icon"
+                />
+              </button>
+            </div>
+
+            <div class="swiper-slide price__item">
+              <div class="price__service">
+                Тестирование с выдачей технического заключения
+              </div>
+
+              <div class="price__cost">1000 ₽</div>
+
+              <div class="price__time">30–120 мин</div>
+
+              <button class="price__button" type="button">
+                <img
+                  src="./img/price-img/order.svg"
+                  alt="arrow"
+                  class="price__button-icon"
+                />
+              </button>
+            </div>
+
+            <div class="swiper-slide price__item">
+              <div class="price__service">
+                Замена программного обеспечения
+              </div>
+
+              <div class="price__cost">1000 ₽</div>
+
+              <div class="price__time">30–120 мин</div>
+              <button class="price__button" type="button">
+                <img
+                  src="./img/price-img/order.svg"
+                  alt="arrow"
+                  class="price__button-icon"
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <button
+            class="price-table__button toggle-btn"
+            type="button"
+            id="price-tableBtn"
+          >
+            <span class="price-table__button-text">Показать все</span>
+          </button>
+        </div>
+
+        <div class="price__footer">
+          <p class="price__description">
+            Все цены указаны с учетом НДС. Стоимость ремонта <br />
+            указана наединичную услугу. Для получения коммерческого<br />
+            предложения на постоянное обслуживание, оставьте заявку.
+          </p>
+
+          <a href="#" class="price__offer">
+            <img
+              src="./img/price-img/comercial-suggestion.svg"
+              alt="more"
+              class="price__offer-icon"
+            />
+          </a>
+        </div>
+      </div> </main></body
+></html>

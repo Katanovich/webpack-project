@@ -8,5 +8,5 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 window.addEventListener('DOMContentLoaded', () => {
-  initSwiper('.brand', 'brand-swiper')
+  initAllSwipers()
 })
