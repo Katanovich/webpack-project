@@ -3,55 +3,44 @@
   align-items: center;
   padding: 16px;
   position: relative;
+  &__title {
+    margin-top: 16px;
+    padding: 16px;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  &__repair-text,
+  &__status-text {
+    white-space: nowrap;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+    display: none;
+  }
+  &__repair-btn,
+  &__status-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border: none;
+    background: transparent;
+  }
 }
-.cps-header__title {
-  margin-top: 16px;
-  padding: 16px;
-}
+
 .main {
   display: flex;
   flex-direction: column;
   padding: 0;
   overflow-x: hidden;
-}
-.cps-header__title::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: aqua;
-  width: 3px;
-  height: 16px;
-  left: 10px;
-}
-
-.cps-header__left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 16px;
-}
-
-.cps-header__repair-text,
-.cps-header__status-text {
-  white-space: nowrap;
-}
-
-.cps-header__right {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-left: auto;
-  display: none;
-}
-
-.cps-header__repair-btn,
-.cps-header__status-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  border: none;
-  background: transparent;
 }
 
 .cps-nav {
@@ -91,34 +80,27 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 0;
-}
 
-.cps-content__text {
-  padding: 16px;
-}
+  &__text {
+    padding: 16px;
+  }
 
-.cps-content__background-img {
-  display: block;
-  width: 100%;
-  min-height: 220px;
-  background-image: url('../img/cps-img/cps-pic.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 8px;
-}
-
-.cps-content__paragraph--open {
-  margin-bottom: 8px;
-}
-
-.cps-content__read-more {
-  margin: 8px;
-}
-
-.brand__title {
-  margin-top: 36px;
-  font-size: 16px;
+  &__background-img {
+    display: block;
+    width: 100%;
+    min-height: 220px;
+    background-image: url('../img/cps-img/cps-pic.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  &__paragraph--open {
+    margin-bottom: 8px;
+  }
+  &__read-more {
+    margin: 8px;
+  }
 }
 
 .btn {

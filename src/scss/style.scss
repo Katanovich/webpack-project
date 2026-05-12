@@ -6,6 +6,7 @@
 @import 'button';
 @import 'swiper';
 @import 'price';
+@import 'footer';
 
 $bgColor: #fff;
 $text: #24292e;
@@ -27,8 +28,11 @@ $swiperBg: rgb(235, 234, 234);
 body {
   padding: 1rem;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Comic', sans-serif;
   background-color: $bgColor;
   color: $text;
   width: 100%;
+}
+h3 {
+  margin: 8px;
 }

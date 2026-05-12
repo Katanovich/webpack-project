@@ -34,7 +34,11 @@
   &__list--expanded &__item:nth-child(n + 7) {
     display: flex;
   }
+  &__title {
+    margin-top: 36px;
+  }
 }
+
 .toggle-btn {
   display: block;
   border: none;

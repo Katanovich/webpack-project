@@ -21,11 +21,11 @@
     height: 100%;
     object-fit: contain;
   }
+  &__button {
+    display: none;
+  }
 }
 
-.repair__button {
-  display: none;
-}
 @media (min-width: 768px) {
   .repair {
     &__list.swiper-wrapper {
@@ -40,11 +40,11 @@
     &__list--expanded .repair__item:nth-child(n + 4) {
       display: flex;
     }
+    &__button {
+      display: flex;
+    }
   }
 
-  .repair__button {
-    display: flex;
-  }
   .swiper-pagination {
     display: none;
   }

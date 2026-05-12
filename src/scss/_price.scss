@@ -26,43 +26,50 @@
   &__list--expanded .price__item:nth-child(n + 4) {
     display: grid;
   }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 
   &__service,
   &__cost,
   &__time {
     margin-bottom: 16px;
   }
+  &__description {
+    font-size: 12px;
+
+    margin: 24px 0 24px;
+  }
+  .price-table__button {
+    display: none;
+  }
+
 }
 
-.price__button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  border: none;
-  background: none;
-
-  cursor: pointer;
-}
-.price__description {
-  font-size: 12px;
-  line-height: 12px;
-  margin: 8px 8px;
-}
-.price__offer-icon {
-  padding-left: 8px;
-}
 @media (min-width: 768px) {
   .price {
+    &__head,
     &__list.swiper-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
+    &__head {
+      padding-left: 32px;
+    }
     &__item {
       width: 100%;
     }
+    .price-table__button {
+    display: flex;
   }
+  }
+
 
   .swiper-pagination {
     display: none;
@@ -89,7 +96,11 @@
       display: none;
     }
   }
+ 
   .swiper-pagination {
     display: none;
+  }
+      .price-table__button {
+    display: flex;
   }
 }
