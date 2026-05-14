@@ -17,6 +17,7 @@ $swiperBg: rgb(235, 234, 234);
   src: url('../fonts/comic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  color: $text;
 }
 
 * {
@@ -35,4 +36,29 @@ body {
 }
 h3 {
   margin: 8px;
+}
+
+body {
+  color: $text;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  color: $text;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0066cc;
+}
+
+ul li {
+  color: $text;
 }
