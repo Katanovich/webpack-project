@@ -1,4 +1,4 @@
-# Webpack Static Site Starter Kit
+# Webpack Static Site Starter Kit, link: https://katanovich.github.io/webpack-project/
 
 ## Project Requirements
 
