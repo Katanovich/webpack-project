@@ -8,16 +8,17 @@
 @import 'price';
 @import 'footer';
 
-$bgColor: #fff;
+$bgColor: #f8f8f8;
 $text: #24292e;
 $swiperBg: rgb(235, 234, 234);
+$hcolor: rgba(126, 126, 130, 1);
+$linkHover: #889cb0;
 
 @font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-  color: $text;
+  font-family: 'TT-Lake';
+  src: url('../fonts/tt-lakes/TTLakesMediumDEMO.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
 }
 
 * {
@@ -27,19 +28,20 @@ $swiperBg: rgb(235, 234, 234);
 }
 
 body {
-  padding: 1rem;
   margin: 0;
-  font-family: 'Comic', sans-serif;
+  font-family: 'TT-Lake', 'Comic', sans-serif;
   background-color: $bgColor;
-  color: $text;
+  color: $hcolor;
   width: 100%;
 }
 h3 {
   margin: 8px;
+  color: $hcolor;
+  padding-left: 24px;
 }
 
 body {
-  color: $text;
+  color: $hcolor;
 }
 ul,
 li,
@@ -47,7 +49,7 @@ p,
 h1,
 h2,
 h3 {
-  color: $text;
+  color: $hcolor;
 }
 
 a {
@@ -56,9 +58,9 @@ a {
 }
 
 a:hover {
-  color: #0066cc;
+  color: $linkHover;
 }
 
 ul li {
-  color: $text;
+  color: $hcolor;
 }

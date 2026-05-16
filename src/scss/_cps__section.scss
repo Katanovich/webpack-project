@@ -5,28 +5,28 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px;
-  background-color: $swiperBg;
+  background-color: $bgColor;
 }
 
 .cps-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 16px;
   position: relative;
-  &__title {
-    margin-top: 16px;
-    padding: 16px;
-  }
 
   &__left {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 16px;
   }
-  &__repair-text,
-  &__status-text {
-    white-space: nowrap;
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
   }
   &__right {
     display: flex;
@@ -35,6 +35,16 @@
     margin-left: auto;
     display: none;
   }
+  &__title {
+    margin-top: 16px;
+    padding: 16px;
+  }
+
+  &__repair-text,
+  &__status-text {
+    white-space: nowrap;
+  }
+
   &__repair-btn,
   &__status-btn {
     display: flex;
@@ -156,5 +166,8 @@
 @media (min-width: 1120px) {
   .cps-header__right {
     display: flex;
+  }
+  .cps-header__middle {
+    display: none;
   }
 }

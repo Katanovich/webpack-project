@@ -1,6 +1,8 @@
+@use './_variables.scss' as *;
 .repair {
   overflow: hidden;
   width: 100%;
+  background-color: $bgColor;
   &__list {
     display: flex;
     padding: 16px 16px 24px;

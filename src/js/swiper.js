@@ -45,13 +45,16 @@ function setToggleButton(btnSelector, listSelector, textSelector, activeClass) {
   const btn = document.querySelector(btnSelector)
   const list = document.querySelector(listSelector)
   const btnText = document.querySelector(textSelector)
+  const arrow = btn.querySelector('.arrow')
   if (!btn || !list || !btnText) return
   btn.addEventListener('click', () => {
     list.classList.toggle(activeClass)
     if (list.classList.contains(activeClass)) {
       btnText.textContent = 'Скрыть'
+      arrow.style.transform = 'rotate(180deg)'
     } else {
       btnText.textContent = 'Показать все'
+      arrow.style.transform = 'rotate(0deg)'
     }
   })
 }

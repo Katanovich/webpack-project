@@ -1,6 +1,9 @@
+@use './_variables.scss' as *;
+
 .brand {
   overflow: hidden;
   width: 100%;
+  background-color: $bgColor;
 
   &__list {
     display: flex;
