@@ -65,7 +65,7 @@
     margin: 24px 0 24px;
   }
   .price-table__button {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -84,7 +84,7 @@
       width: 100%;
     }
     .price-table__button {
-      display: flex;
+      display: flex !important;
     }
   }
 
@@ -153,8 +153,6 @@
     }
 
     &__button {
-      position: static;
-
       justify-self: end;
       padding-right: 24px;
     }

@@ -29,7 +29,7 @@
   }
 
   &__button {
-    display: none;
+    display: none !important;
   }
 
   &__title {
@@ -70,12 +70,12 @@
     }
 
     &__button {
-      display: flex;
+      display: flex !important;
     }
   }
 
   .swiper-pagination {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -101,6 +101,6 @@
   }
 
   .brand__button {
-    display: flex;
+    display: flex !important;
   }
 }
