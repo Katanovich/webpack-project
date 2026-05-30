@@ -1,15 +1,19 @@
 @use './_variables.scss' as *;
+
 .repair {
   overflow: hidden;
   width: 100%;
   background-color: $bgColor;
+  padding: 0 16px;
+
   &__list {
     display: flex;
-    padding: 16px 16px 24px;
+    padding: 16px 0 24px;
     width: 100%;
   }
 
   &__item {
+    display: flex;
     flex-shrink: 0;
     max-width: 240px;
     height: 100%;
@@ -17,12 +21,14 @@
     align-items: center;
     border-radius: 8px;
   }
+
   &__img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+
   &__button {
     display: none !important;
   }
@@ -33,15 +39,19 @@
     &__list.swiper-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      justify-content: start;
       gap: 20px;
+      width: 100%;
+      transform: none !important;
     }
+
     &__item:nth-child(n + 4) {
       display: none;
     }
+
     &__list--expanded .repair__item:nth-child(n + 4) {
       display: flex;
     }
+
     &__button {
       display: flex !important;
     }
@@ -58,10 +68,13 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      transform: none !important;
     }
+
     &__item:nth-child(n + 4) {
       display: flex;
     }
+
     &__item:nth-child(n + 5) {
       display: none;
     }
@@ -70,7 +83,8 @@
   .swiper-pagination {
     display: none;
   }
-  .brand__button {
+
+  .repair__button {
     display: flex !important;
   }
 }

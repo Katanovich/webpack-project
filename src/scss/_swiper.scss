@@ -1,17 +1,17 @@
 @use './_variables.scss' as *;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 .swiper {
   max-width: 100%;
   background-color: $swiperBg;
   overflow: hidden;
-  margin-left: 0;
-  margin-right: auto;
 }
+
 .swiper-wrapper {
-  transition: transform 0.3s ease;
   position: relative;
 }

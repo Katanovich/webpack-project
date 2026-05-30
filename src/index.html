@@ -1,18 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <header> </header>
-    <div class="overlay"></div>
+<body>
+  <header> </header>
+  <div class="overlay"></div>
+  <div class="container">
     <aside class="sidebar__main">
+      <!-- всё содержимое aside без изменений -->
       <header class="sidebar__header">
         <div class="sidebar__header-left">
           <button class="btn sidebar__btn-close" type="button">
@@ -68,12 +59,12 @@
             </button>
           </div>
           <div class="sidebar__contacts-click">
-            <a class="sidebar__contacts-mail" href="mailto:mail@cps.com">
-              mail@cps.com
-            </a>
-            <a class="sidebar__contacts-tel" href="tel:88008908900">
-              8 800 890 8900
-            </a>
+            <a class="sidebar__contacts-mail" href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+            <a class="sidebar__contacts-tel" href="tel:88008908900"
+              >8 800 890 8900</a
+            >
           </div>
           <div class="sidebar__lang-container">
             <button class="btn sidebar__lang-ru" type="button">RU</button>
@@ -85,6 +76,7 @@
     </aside>
 
     <main class="main">
+      <!-- всё содержимое main без изменений -->
       <section class="cps">
         <header class="cps-header">
           <div class="cps-header__left">
@@ -105,7 +97,7 @@
           </div>
           <div class="cps-header__right">
             <button class="cps-header__repair-btn">
-              <span class="cps-header__repair-text">Оставить заявку </span>
+              <span class="cps-header__repair-text">Оставить заявку</span>
               <img
                 src="./img/cps-img/repair.svg"
                 alt="Ремонт"
@@ -123,12 +115,11 @@
           </div>
         </header>
         <h1 class="cps-header__title">Услуги и сервисы</h1>
-
         <nav class="cps-nav">
           <ul class="cps-nav__list">
-            <li class="cps-nav__item cps-nav__item--active">
-              <a href="#">Ремонтируемые бренды</a>
-            </li>
+            <li class="cps-nav__item cps-nav__item--active"
+              ><a href="#">Ремонтируемые бренды</a></li
+            >
             <li class="cps-nav__item"
               ><a href="#">Ремонтируемые устройства</a></li
             >
@@ -137,7 +128,6 @@
             <li class="cps-nav__item"><a href="#">Контактная информация</a></li>
           </ul>
         </nav>
-
         <div class="cps-content">
           <div class="cps-content__text">
             <p class="cps-content__paragraph cps-content__paragraph--open">
@@ -165,118 +155,103 @@
       </section>
 
       <h3 class="brand__title">Ремонт техники различных брендов</h3>
-
       <div class="swiper brand">
         <div class="swiper-wrapper brand__list">
-          <div class="swiper-slide brand__item">
-            <img src="./img/brand_img/cat1.svg" alt="Lenovo" />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          <div class="swiper-slide brand__item"
+            ><img src="./img/brand_img/cat1.svg" alt="Lenovo"
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1_copy_2.svg"
               class="brand__img"
               alt="Apple"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy.svg"
               class="brand__img"
               alt="Samsung"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy10.svg"
               class="brand__img"
               alt="Sony"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy3.svg"
               class="brand__img"
               alt="ViewSonic"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy7.svg"
               class="brand__img"
               alt="Bosh"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
-              src="img/brand_img/cat1copy8.svg"
-              class="brand__img"
-              alt="HP"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img src="img/brand_img/cat1copy8.svg" class="brand__img" alt="HP"
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy9.svg"
               class="brand__img"
               alt="Acer"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1.svg"
               class="brand__img"
               alt="Lenovo"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1_copy_2.svg"
               class="brand__img"
               alt="Apple"
-            />
-          </div>
-          <div class="swiper-slide brand__item">
-            <img
+          /></div>
+          <div class="swiper-slide brand__item"
+            ><img
               src="./img/brand_img/cat1copy.svg"
               class="brand__img"
               alt="Samsung"
-            />
-          </div>
+          /></div>
         </div>
-
         <div class="swiper-pagination"></div>
         <button class="brand__button toggle-btn" type="button" id="brandBtn">
           <img class="arrow" src="./img/arrow.svg" alt="arrow" />
           <span class="brand__button-text">Показать все</span>
         </button>
       </div>
-      <h3 class="services__title">Ремонт различных видов техники</h3>
 
+      <h3 class="services__title">Ремонт различных видов техники</h3>
       <div class="swiper repair">
         <div class="swiper-wrapper repair__list">
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
-          <div class="swiper-slide repair__item">
-            <img src="./img/swiper2.img/repair.svg" alt="repair" />
-          </div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
+          <div class="swiper-slide repair__item"
+            ><img src="./img/swiper2.img/repair.svg" alt="repair"
+          /></div>
         </div>
         <div class="swiper-pagination"></div>
         <button class="repair__button toggle-btn" type="button" id="repairBtn">
@@ -287,103 +262,71 @@
 
       <div class="price">
         <h3 class="price__title">Цены на услуги</h3>
-
         <div class="price__table swiper">
           <div class="price__head">
             <span class="price__head-service">Ремонтные услуги</span>
             <span class="price__head-price">Цена</span>
             <span class="price__head-time">Срок</span>
           </div>
-
           <div class="swiper-wrapper price__list">
             <div class="swiper-slide price__item">
               <div class="price__service">Диагностика</div>
-
               <div class="price__cost">Бесплатно</div>
-
               <div class="price__time">30 мин</div>
-
-              <button class="price__button" type="button">
-                <img
+              <button class="price__button" type="button"
+                ><img
                   src="./img/price-img/order.svg"
                   alt="arrow"
                   class="price__button-icon"
-                />
-              </button>
+              /></button>
             </div>
-
             <div class="swiper-slide price__item">
               <div class="price__service">Замена дисплея</div>
-
               <div class="price__cost">1000 ₽</div>
-
               <div class="price__time">30–120 мин</div>
-
-              <button class="price__button" type="button">
-                <img
-                  class="arow"
+              <button class="price__button" type="button"
+                ><img
                   src="./img/price-img/order.svg"
                   alt="arrow"
                   class="price__button-icon"
-                />
-              </button>
+              /></button>
             </div>
-
             <div class="swiper-slide price__item">
-              <div class="price__service">
-                Замена полифонического динамика
-              </div>
-
+              <div class="price__service">Замена полифонического динамика</div>
               <div class="price__cost">1000 ₽</div>
-
               <div class="price__time">30–120 мин</div>
-
-              <button class="price__button" type="button">
-                <img
+              <button class="price__button" type="button"
+                ><img
                   src="./img/price-img/order.svg"
                   alt="arrow"
                   class="price__button-icon"
-                />
-              </button>
+              /></button>
             </div>
-
             <div class="swiper-slide price__item">
-              <div class="price__service">
-                Тестирование с выдачей технического заключения
-              </div>
-
+              <div class="price__service"
+                >Тестирование с выдачей технического заключения</div
+              >
               <div class="price__cost">1000 ₽</div>
-
               <div class="price__time">30–120 мин</div>
-
-              <button class="price__button" type="button">
-                <img
-                  class="arow"
+              <button class="price__button" type="button"
+                ><img
                   src="./img/price-img/order.svg"
                   alt="arrow"
                   class="price__button-icon"
-                />
-              </button>
+              /></button>
             </div>
-
             <div class="swiper-slide price__item">
-              <div class="price__service">
-                Замена программного обеспечения
-              </div>
-
+              <div class="price__service">Замена программного обеспечения</div>
               <div class="price__cost">1000 ₽</div>
-
               <div class="price__time">30–120 мин</div>
-              <button class="price__button" type="button">
-                <img
+              <button class="price__button" type="button"
+                ><img
                   src="./img/price-img/order.svg"
                   alt="arrow"
                   class="price__button-icon"
-                />
-              </button>
+              /></button>
             </div>
           </div>
-
           <div class="swiper-pagination"></div>
           <button
             class="price-table__button toggle-btn"
@@ -394,14 +337,12 @@
             <span class="price-table__button-text">Показать все</span>
           </button>
         </div>
-
         <div class="price__footer">
           <p class="price__description">
             Все цены указаны с учетом НДС. Стоимость ремонта <br />
-            указана наединичную услугу. Для получения коммерческого<br />
+            указана на единичную услугу. Для получения коммерческого<br />
             предложения на постоянное обслуживание, оставьте заявку.
           </p>
-
           <a href="#" class="price__offer">
             <img
               src="./img/price-img/comercial-suggestion.svg"
@@ -411,14 +352,15 @@
           </a>
         </div>
       </div>
+
       <footer class="footer">
-        <div class="left"> © 2019 CPS <br />Разработано командой Apesong </div>
+        <div class="left">© 2019 CPS <br />Разработано командой Apesong</div>
         <div class="middle">Политика конфиденциальности</div>
         <div class="right"
-          >Информация, размещенная на данной странице, <br />
-          не является публичной офертой</div
+          >Информация, размещенная на данной странице, <br />не является
+          публичной офертой</div
         >
       </footer>
-    </main></body
-  ></html
->
+    </main>
+  </div>
+</body>

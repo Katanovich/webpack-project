@@ -78,6 +78,7 @@
   &__list {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
     list-style: none;
     padding: 8px;
@@ -90,6 +91,7 @@
     white-space: nowrap;
     padding: 8px 12px;
     min-width: max-content;
+    align-items: center;
   }
 
   &__item a:hover {
@@ -97,9 +99,10 @@
     padding-left: 8px;
   }
   &__item--active a {
-    display: block;
+    display: flex;
+    align-items: center;
     border: 1px solid aqua;
-    padding: 4px;
+    border-radius: 8px;
   }
 }
 
@@ -168,6 +171,9 @@
     display: flex;
   }
   .cps-header__middle {
+    display: none;
+  }
+  .cps-header__left {
     display: none;
   }
 }

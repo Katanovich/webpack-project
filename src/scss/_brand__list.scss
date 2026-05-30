@@ -4,10 +4,11 @@
   overflow: hidden;
   width: 100%;
   background-color: $bgColor;
+  padding: 0 16px;
 
   &__list {
     display: flex;
-    padding: 16px 16px 40px;
+    padding: 16px 0 40px;
     width: 100%;
   }
 
@@ -55,7 +56,6 @@
     &__list.swiper-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      justify-content: start;
       gap: 20px;
       width: 100%;
       transform: none !important;
@@ -85,6 +85,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      transform: none !important;
     }
 
     &__item:nth-child(n + 7) {
