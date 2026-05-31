@@ -5,10 +5,11 @@
   width: 100%;
   background-color: $bgColor;
   padding: 0 16px;
+  align-items: center;
 
   &__list {
     display: flex;
-    padding: 16px 0 40px;
+    padding: 16px 16px 40px;
     width: 100%;
   }
 
