@@ -15,3 +15,24 @@
 .swiper-wrapper {
   position: relative;
 }
+.swiper-pagination {
+  position: relative;
+  bottom: auto !important;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px !important;
+}
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.swiper-pagination-bullet-active:hover {
+  width: 20px;
+  height: 10px;
+}

@@ -4,6 +4,11 @@
   &__table {
     overflow: hidden;
     width: 100%;
+    padding-bottom: 40px;
+  }
+
+  &__table .swiper-pagination {
+    bottom: 15px !important;
   }
 
   &__head {
@@ -12,7 +17,7 @@
 
   &__list {
     display: flex;
-    padding: 16px 16px 20px;
+    padding: 16px 16px 40px;
   }
 
   &__item {
